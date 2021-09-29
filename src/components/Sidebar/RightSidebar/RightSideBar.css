@@ -1,0 +1,48 @@
+.RightSidebar {
+  width: 216px;
+  height: 100%;
+  padding: 15px;
+}
+.RightHeader {
+  height: auto;
+  display: flex;
+  width: 100%;
+}
+
+.RightHeader div {
+  width: 46px;
+  height: 46px;
+  border-radius: 6px;
+  background-color: #e5eef6;
+  margin-right: 10px;
+  color: #0052a8;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminProfile {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminProfilePic,
+.adminProfilePic img {
+  height: 64px;
+  width: 64px;
+  border-radius: 6px;
+}
+.adminName {
+  height: 22px;
+  width: 100px;
+
+  height: auto;
+}
+@media (max-width: 800px) {
+  .RightSidebar {
+    display: none;
+  }
+}

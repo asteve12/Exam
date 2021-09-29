@@ -1,0 +1,55 @@
+.RightSidebar {
+  width: 100%;
+  /* height: 100%; */
+  /* padding: 15px; */
+}
+.RightHeader {
+  height: auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.RightHeader div {
+  width: auto;
+  height: 46px;
+  border-radius: 6px;
+
+  margin-right: 10px;
+  color: #0052a8;
+  font-size: 25px;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+.adminProfile {
+  width: auto;
+  height: auto;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.adminProfilePic,
+.adminProfilePic img {
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+}
+.adminName {
+  width: 100%;
+
+  height: auto;
+}
+
+.adminName h5,
+.adminName p {
+  font-size: 10px;
+}
+
+@media (min-width: 800px) {
+  .RightSidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.LeftSidebar {
+  width: 216px;
+  height: 100%;
+  padding: 16px 0px;
+}
+.LeftSideBarImageHeader {
+  padding-left: 32px;
+}
+.LeftSideBarMenu {
+  padding-left: 32px;
+}
+
+@media (max-width: 700px) {
+}

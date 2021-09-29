@@ -1,0 +1,50 @@
+.Notify {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px 0px #33333326;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.headerText h5,
+.headerText p {
+  font-size: 17px;
+}
+
+.notificationComment p {
+  font-size: 17px;
+  padding-left: 10%;
+  margin-top: 10px;
+}
+.illumino {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+  border-radius: 8px;
+  padding-left: 5%;
+  margin-bottom: 10px;
+}
+
+.notifyFooter {
+  height: 100px;
+  width: 100%;
+  background-color: #f5f8fc;
+  position: sticky;
+  bottom: 0px;
+}
+
+@media (min-width: 800px) {
+  .NotifyCont {
+    display: none;
+  }
+}

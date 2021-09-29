@@ -1,0 +1,43 @@
+.courseWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.CourseWrapper h1 {
+  font-size: 40px;
+}
+.ResetCont {
+  width: 100%;
+  height: auto;
+  background-color: #f5f8fc;
+  display: flex;
+  justify-content: flex-end;
+}
+.ResetCont button {
+  height: 56px;
+  width: 146px;
+}
+.ResetCont button.Reset {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0052a8;
+}
+
+.ResetCont button.Save {
+  background-color: #0052a8;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.MobileCourseHeader {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .MobileCourseHeader {
+    display: none;
+  }
+}

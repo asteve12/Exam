@@ -1,0 +1,204 @@
+.SettingMain {
+  width: 100%;
+  height: 100%;
+}
+
+.SettingMain h1 {
+  font-size: 40px;
+}
+
+.InfoCard {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 5px 0px #33333326;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 2%;
+}
+
+.CardHeader {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #0052a8;
+}
+.CardHeader h5 {
+  font-size: 20px;
+}
+
+.LogoBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.SettingName {
+  width: 70%;
+  padding-left: 5%;
+}
+
+.SettingLogo {
+  width: 25%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+.SettingLogo p {
+  font-size: 16px;
+  color: #0052a8;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.SettingText {
+  width: 100%;
+}
+
+.schoolName {
+  font-weight: bold;
+  color: #0052a8;
+  margin-bottom: 5px;
+}
+
+.schoolLogo {
+  height: 120px;
+  width: 120px;
+  /* padding: 10px; */
+  border: 1px solid #8c8c8c;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.personalCard {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 5px 0px #33333326;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.personalBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-left: 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.NameBox {
+  width: 200px;
+  height: auto;
+  box-sizing: border-box;
+
+  margin-bottom: 50px;
+}
+
+.NameBox h5 {
+  font-size: 16px;
+  color: #0052a8;
+  margin-bottom: 5px;
+}
+
+.generalCard {
+  width: 100%;
+  height: 241px;
+  box-shadow: 0px 2px 5px 0px #33333326;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.genBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-left: 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.generalBox {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  flex-basis: 200px;
+  margin-bottom: 50px;
+}
+
+.generalBox h5 {
+  font-size: 16px;
+  color: #0052a8;
+  margin-bottom: 5px;
+}
+
+.settingFooter {
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  bottom: 0px !important;
+  background-color: #f5f8fc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.settingFooter button {
+  height: 64px;
+  width: 148px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.settingFooter button:first-child {
+  border: none;
+  background-color: #f5f8fc;
+  color: #0052a8;
+}
+.settingFooter button:last-child {
+  border: none;
+  background-color: #0052a8;
+  color: #f5f8fc;
+  border-radius: 8px;
+}
+@media (min-width: 800px) and (max-width: 900px) {
+  .InfoCard {
+    padding-bottom: 5%;
+  }
+  .LogoBox {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .SettingLogo {
+    justify-content: flex-start;
+    width: 63%;
+
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .InfoCard {
+    padding-bottom: 5%;
+  }
+  .LogoBox {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .SettingLogo {
+    /* justify-content: flex-start; */
+    width: 100%;
+    padding-left: 5%;
+
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .MobileHeader {
+    display: none;
+  }
+}

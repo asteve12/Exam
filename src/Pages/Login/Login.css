@@ -1,0 +1,105 @@
+.LoginContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+.oWrapper {
+  background-image: url(../../assets/design/background.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  background-size: contain;
+}
+
+.LoginWrapper {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginInputContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginInputContainer input {
+  width: 426px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 17px 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.LoginText {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+.LoginText h5 {
+  font-size: 48px;
+
+  font-family: inherit;
+}
+
+.LoginButton {
+  width: 425px;
+  min-width: 50%;
+  height: 64px;
+  padding: 21px, 188px, 21px, 188px;
+  border-radius: 8px;
+  background-color: #0052a8;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.LoginButtonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DesignContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .LoginText h5 {
+    font-size: 30px;
+  }
+  .LoginInputContainer input {
+    width: 100%;
+    height: 50%;
+  }
+  .LoginButton {
+    width: 200px;
+  }
+}
+
+@media (max-width: 270px) {
+  .LoginText h5 {
+    font-size: 20px;
+  }
+  .LoginInputContainer input {
+    width: 90%;
+    height: 50%;
+  }
+  .LoginButton {
+    width: 100px;
+  }
+}

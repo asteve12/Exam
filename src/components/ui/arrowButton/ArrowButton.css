@@ -1,0 +1,62 @@
+.DashboardFooter {
+  padding: 2px;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.DashboardFooter button {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+
+  outline: none;
+  margin: 5px;
+  font-size: 10px;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.DashboardFooter button.pageBtn {
+  width: auto;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+
+  outline: none;
+  margin: 5px;
+  font-size: 10px;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.DashboardFooter p {
+  font-size: 24px;
+  color: #333333;
+}
+@media (max-width: 330px) {
+  .DashboardFooter {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .DashboardFooter p {
+    font-size: 10px;
+  }
+  .DashboardFooter button {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .DashboardFooter button.pageBtn {
+    font-size: 10px;
+  }
+}

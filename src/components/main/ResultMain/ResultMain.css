@@ -1,0 +1,37 @@
+.ResultMain {
+  width: 100%;
+  height: auto;
+}
+.ResultHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ResultHeader h1 {
+  font-size: 40px;
+}
+
+.ResultHeader select {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 1px;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .ResultHeader {
+    flex-direction: column;
+  }
+  .ResultHeader h1 {
+    font-size: 2em;
+  }
+  .ResultHeader select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .MobileHeaderCont {
+    display: none;
+  }
+}

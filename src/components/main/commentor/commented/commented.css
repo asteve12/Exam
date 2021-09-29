@@ -1,0 +1,14 @@
+.ActivityUserImgCommented {
+  display: flex;
+}
+
+.ActivityUserImgCommented img.activityPics {
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+}
+.ActivityUserComment {
+  width: 500px;
+  height: auto;
+  padding-left: 10px;
+}

@@ -1,0 +1,25 @@
+.Registered {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px !important;
+
+  height: auto;
+}
+.RegisteredCourses {
+  width: auto;
+  padding: 10px;
+}
+
+.registeredWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .registeredWrapper {
+    display: none;
+  }
+}

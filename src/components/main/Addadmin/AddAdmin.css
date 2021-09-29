@@ -1,0 +1,331 @@
+.AddAdminPage {
+  width: 100%;
+  height: auto;
+}
+.AdminTitleWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminTitleCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminTitle {
+  width: 90%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminNameWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminNameCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminName {
+  width: 90%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminBirthWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminBirthCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminBirth {
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.AdminBirth input.Date {
+  width: 40%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.AdminBirth div.GenderCon {
+  width: 55%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AdminBirth div.GenderCon select {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  width: 80%;
+  height: 56px;
+}
+
+.AdminDepartmentWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminDepartmentCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminDepartment {
+  width: 90%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminEmailWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminEmailCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminEmail {
+  width: 90%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminPhoneWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminPhoneCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminPhone {
+  width: 90%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminPhotoWrapper {
+  width: 100%;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.AdminPhotoCon {
+  width: 20%;
+  height: auto;
+  font-size: 16px;
+}
+.AdminPhoto {
+  width: 90%;
+
+  height: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+.AdminPhoto div {
+  width: 80%;
+  height: 56px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.AdminPhoto button {
+  width: 20%;
+  height: 56px;
+  background-color: #0052a8;
+  border: 1px solid #e0e0e0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+.PhotoSelect {
+  opacity: 0;
+}
+
+.AddBtn {
+  background-color: #0052a8;
+  width: 148px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  margin-left: auto;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .AdminTitleWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .AdminTitle {
+    width: 100%;
+  }
+  .AdminTitleCon {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .AdminNameWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .AdminNameCon {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .AdminName {
+    width: 100%;
+  }
+  .AdminBirthWrapper {
+    display: none;
+  }
+  .AdminBirthWrappermobile {
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .AdminBirthConmobile {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+  }
+  .AdminBirthConmobile p {
+    margin-bottom: 5px;
+  }
+  .AdminBirthConmobile input.Datemobile {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .AdminBirthmobile {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-direction: column;
+  }
+  .AdminBirthmobile div.GenderConmobile {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .AdminBirthmobile div.GenderConmobile select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    width: 100%;
+    height: 56px;
+  }
+  .AdminDepartmentWrapper {
+    width: 100%;
+    display: flex;
+    height: auto;
+
+    flex-direction: column;
+  }
+  .AdminDepartmentCon {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .AdminDepartment {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+  }
+  .AdminEmailWrapper {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .AdminEmailCon {
+    width: 100%;
+  }
+  .AdminEmail {
+    width: 100%;
+  }
+  .AdminPhoneWrapper {
+    flex-direction: column;
+  }
+  .AdminPhoneCon {
+    width: 100%;
+  }
+  .AdminPhone {
+    width: 100%;
+  }
+  .AdminPhotoWrapper {
+    flex-direction: column;
+  }
+  .AdminPhotoCon {
+    width: 100%;
+  }
+  .AdminPhoto {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .AdminBirthWrappermobile {
+    display: none;
+  }
+}

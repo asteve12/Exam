@@ -1,0 +1,24 @@
+.Template {
+  width: 100%;
+  padding: 2px;
+  height: auto;
+  color: #cccccc;
+}
+.TemplateItem {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.TemplateItem p {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.addIcon {
+  font-size: 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.StudentDashboardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+}
+.StudentDashboardHeader h1 {
+  font-family: inherit;
+  font-size: 40px;
+}
+
+.StudentDashboardHeader select {
+  width: 25%;
+
+  color: #333333;
+  border-radius: 8px;
+  /* padding: 3%; */
+
+  background-color: white;
+  height: 50px;
+  border: solid 1px #333333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 5%;
+}
+
+.StudentCardWrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.DashboardFooter {
+  padding: 2px;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.DashboardFooter button {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+
+  outline: none;
+  margin: 5px;
+  font-size: 10px;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.DashboardFooter p {
+  font-size: 24px;
+  color: #333333;
+}
+.StudentMobileHeader {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .StudentMobileHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .StudentDashboardHeader {
+    justify-content: space-evenly;
+  }
+}

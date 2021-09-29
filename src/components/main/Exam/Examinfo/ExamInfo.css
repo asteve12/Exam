@@ -1,0 +1,188 @@
+.ExamMain {
+  width: 100%;
+}
+
+.ExamInstructions {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ExamInstruct {
+  width: 30%;
+  font-weight: bold;
+}
+.ExamSelect1 {
+  width: 45%;
+  height: 100%;
+  padding-right: 50px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.ExamInput {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ExamInput select {
+  width: 100%;
+  border-radius: 8px;
+  height: 56px;
+  padding: 5px;
+  resize: none;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.ExamInput textarea {
+  width: 45%;
+  border-radius: 8px;
+  height: 56px;
+  padding: 5px;
+  resize: none;
+  background-color: white;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+.ExamInput input.optionA {
+  width: 45%;
+  border-radius: 8px;
+  height: 56px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+
+.ExamInput input.optionB {
+  width: 45%;
+  border-radius: 8px;
+  height: 56px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+.ExamInputEnd {
+  width: 80%;
+}
+
+.ExamInputEnd textarea {
+  width: 100%;
+  border-radius: 8px;
+  height: 210px;
+  padding: 5px;
+  resize: none;
+}
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  height: 210px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.ExamInputSubject {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+}
+.ExamInputSubject2 {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ExamInstruct1 {
+  width: 50%;
+}
+
+.ExamSelect2 {
+  width: 45%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: white;
+}
+.FooterWrapper {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+
+  display: flex;
+}
+.SaveBtn {
+  width: 25%;
+  height: 56px;
+  background-color: #0052a8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.ResetBtn {
+  height: 56px;
+  padding-right: 10px;
+  background-color: rgba(172, 153, 153, 0);
+  border: none;
+  cursor: pointer;
+  color: #0052a8;
+}
+
+.DragText {
+  font-weight: normal;
+}
+
+.ExamInput select.optionA {
+  width: 45%;
+  border-radius: 8px;
+  height: 56px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 400px) {
+  .PageTitle {
+    font-size: 1.5em;
+  }
+  .ExamInstructions {
+    flex-direction: column;
+  }
+  .ExamInstruct {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ExamInput {
+    width: 100%;
+  }
+  .ExamInputEnd {
+    width: 100%;
+  }
+  .ExamInput {
+    flex-direction: column;
+  }
+  .ExamInput input.optionA {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ExamInput input.optionB {
+    width: 100%;
+  }
+  .ExamInput select.optionA {
+    width: 100%;
+  }
+  .SaveBtn,
+  .ResetBtn {
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .mobileHeader {
+    display: none;
+  }
+}

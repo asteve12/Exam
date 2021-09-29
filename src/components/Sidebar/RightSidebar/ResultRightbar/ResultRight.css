@@ -1,0 +1,21 @@
+.StudentRight {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.StudentRight h1 {
+  font-size: 16px;
+}
+
+.ActionImports {
+  display: flex;
+  height: auto;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ActionImports {
+  font-size: 16px;
+}

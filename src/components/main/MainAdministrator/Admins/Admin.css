@@ -1,0 +1,120 @@
+.AminCard {
+  width: 285px;
+  height: 273px;
+  border-radius: 10px;
+  padding: 22px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.Image {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+.Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 80px;
+}
+
+.Name {
+  width: 100%;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+  display: flex;
+}
+.Name h5 {
+  font-size: 20px;
+}
+
+.Email {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #818181;
+  display: flex;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdedd3;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.toggleThumbBefore {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #f5a624;
+  transition: 0.4s all ease;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.AdminBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.AdminBtn button {
+  width: 115px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 9px, 38px, 9px, 38px;
+
+  border: solid 1px #ececec;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.AdminBtn button.Edit {
+  background-color: white;
+  color: #0052a8;
+}
+.AdminBtn button.Delete {
+  color: white;
+  background-color: #0052a8;
+}
+
+.trackStyle {
+  background-color: yellow;
+}
+@media (max-width: 300px) {
+  .AminCard {
+    width: 100%;
+  }
+  .Email {
+    font-size: 10px;
+  }
+}

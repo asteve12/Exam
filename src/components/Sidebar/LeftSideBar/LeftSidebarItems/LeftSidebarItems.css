@@ -1,0 +1,53 @@
+.LeftSidebarItems {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+.activeItems {
+  border-left: solid 3px #0052a8;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeItems div.menuText {
+  color: #0052a8;
+}
+.LeftSidebarItems a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+.iconContainer {
+  width: 20%;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.menuText {
+  width: 70%;
+  height: 100%;
+}
+
+.LeftSideBarWrapper {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-left: 32px;
+  cursor: pointer;
+}
+.OnclickItem {
+  border-left: solid 2px #0052a8;
+  box-sizing: border-box;
+}
+/* @media (max-width: 800px) {
+  .LeftSideBarWrapper {
+    flex-direction: column;
+
+    justify-content: center;
+  }
+} */

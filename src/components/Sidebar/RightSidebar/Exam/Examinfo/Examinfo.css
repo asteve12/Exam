@@ -1,0 +1,58 @@
+.Registered {
+  width: 100%;
+}
+.RegisteredCourses {
+  width: 100%;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+}
+.RegisteredCourses p {
+  font-size: 16px;
+  font-weight: bold;
+  width: 125px;
+  height: 24px;
+  margin-left: 15px;
+}
+
+.NoRegistered {
+  border-radius: 8px;
+  background-color: #fef6e9;
+  width: 86px;
+  height: 37px;
+  padding: 6px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #f5a623;
+}
+.Template {
+  width: 100%;
+  padding: 2px;
+  height: auto;
+}
+.TemplateItem {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TemplateItem p {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.addIcon {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .ExamWrapper {
+    display: none;
+  }
+}

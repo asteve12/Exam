@@ -1,0 +1,70 @@
+.TableWrapper {
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+}
+
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.TableHead {
+  background-color: white;
+}
+
+.TableHead th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.TableHead th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.TableHead th {
+  padding: 13px;
+}
+
+.Tabledata {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.SerialNo {
+  width: 5%;
+
+  text-align: center;
+}
+
+.CourseName {
+  width: 20%;
+
+  text-align: center;
+}
+.Code {
+  width: 20%;
+
+  text-align: center;
+}
+
+.Subject {
+  width: 50%;
+  text-align: center;
+}
+
+.SelectCourse {
+  width: auto;
+  height: 50px;
+
+  margin-top: 10px;
+
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 10px;
+  color: #333333;
+}

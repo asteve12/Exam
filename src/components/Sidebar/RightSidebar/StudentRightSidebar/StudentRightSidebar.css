@@ -1,0 +1,68 @@
+.StudentRight {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.StudentRight h1 {
+  font-size: 16px;
+}
+
+.ActionImports {
+  display: flex;
+  height: auto;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ActionImports {
+  font-size: 16px;
+}
+.ActionImports span {
+  cursor: pointer;
+}
+
+.ExportInvisible {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.ExportInvisible input {
+  width: 42px;
+  height: 22px;
+  color: #cccccc;
+  border: none;
+}
+
+.ExportInvisible select.FileType {
+  height: 22px;
+  width: auto;
+  border: none;
+  background-color: white;
+}
+
+.ExportInvisible select.Pages {
+  width: auto;
+  height: 22px;
+  border: none;
+  background-color: white;
+}
+
+.NumberExport {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  color: #000000;
+  font-weight: bold;
+}
+.ExprtAmnt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}

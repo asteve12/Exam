@@ -1,0 +1,180 @@
+.ExamMain {
+  width: 100%;
+}
+
+.ExamInstructions {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ExamInstruct {
+  width: 30%;
+  font-weight: bold;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.ExamSelect1 {
+  width: 45%;
+  height: 100%;
+  padding-right: 50px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.ExamInput {
+  width: 80%;
+}
+.ExamInput textarea {
+  width: 100%;
+  border-radius: 8px;
+  height: 210px;
+  padding: 5px;
+  resize: none;
+}
+.ExamInputEnd {
+  width: 80%;
+}
+
+.ExamInputEnd textarea {
+  width: 100%;
+  border-radius: 8px;
+  height: 76px;
+  padding: 5px;
+  resize: none;
+}
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  height: 210px;
+  padding: 5px;
+}
+
+.ExamInputSubject {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+}
+.ExamInputSubject2 {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ExamInstruct1 {
+  width: 50%;
+}
+
+.ExamSelect2 {
+  width: 45%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+.FooterWrapper {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+
+  display: flex;
+}
+.SaveBtn {
+  width: 25%;
+  height: 56px;
+  background-color: #0052a8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.ResetBtn {
+  height: 56px;
+  padding-right: 10px;
+  background-color: rgba(172, 153, 153, 0);
+  border: none;
+  cursor: pointer;
+  color: #0052a8;
+}
+
+.rightSidebarMobileCont {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .rightSidebarMobileCont {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .ExamInstructions {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  .ExamInputEnd {
+    width: 100%;
+  }
+  .ExamInstruct {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ExamInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ExamInput textarea {
+    width: 100%;
+  }
+  .ExamInputSubject {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .ExamInstruct1 {
+    margin-bottom: 10px;
+    width: 100%;
+    /* height: 50px; */
+  }
+
+  .ExamInputSubject2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ExamInputSubject2 div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ExamInputSubject2 select {
+    width: 100%;
+    height: 40px;
+  }
+  .ExamSelect2 {
+    height: 40px;
+  }
+  .ExamSelect1 {
+    height: 40px;
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .FooterWrapper {
+    justify-content: center;
+  }
+  .ResetBtn {
+    width: 50%;
+  }
+  .SaveBtn {
+    width: 50%;
+  }
+}
