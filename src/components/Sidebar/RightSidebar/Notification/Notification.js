@@ -2,7 +2,6 @@ import React from 'react';
 //styles
 import styles from './Notification.css';
 //icons
-import { IoAdd } from 'react-icons/io5';
 
 function Notification() {
   return (

@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import examContext from '../../../Pages/Exam/ExamContext';
-import RightSidebarmobile from '../../Sidebar/RightSidebar/mobile/RightSidebarmobile';
-import MobileRightbar from '../../Sidebar/RightSidebar/Exam/Exam';
+import examContext from '../../../../Pages/Exam/ExamContext';
+import RightSidebarmobile from '../../../Sidebar/RightSidebar/mobile/RightSidebarmobile';
+import MobileRightbar from '../../../Sidebar/RightSidebar/Exam/Exam';
 
 //styles
 //components
 
-import styles from './ExamSetting.css';
+import styles from './ExamSettingPrevious.css';
 
-function Exam(props) {
-  const examCon = useContext(examContext);
+function ExamSettingsPrevious(props) {
+  const { prevExamSettingsDetail, prevInfoHandler } = useContext(examContext);
 
   return (
     <div className={styles.ExamWrapper}>
@@ -20,7 +20,7 @@ function Exam(props) {
       </div>
 
       <header>
-        <h1>Exam Settings</h1>
+        <h1>Preview</h1>
       </header>
 
       <br></br>
@@ -37,10 +37,7 @@ function Exam(props) {
               cols='30'
               rows='10'
               draggable='false'
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.instruction}
+              value={prevExamSettingsDetail.instruction}
             ></textarea>
           </div>
         </section>
@@ -57,10 +54,7 @@ function Exam(props) {
               name='totalSubject'
               id=''
               type='number'
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.totalSubject}
+              value={prevExamSettingsDetail.totalSubject}
             ></input>
           </div>
 
@@ -81,10 +75,7 @@ function Exam(props) {
               className={styles.ExamSelect2}
               min='1'
               name='questionPerSubject'
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.questionPerSubject}
+              value={prevExamSettingsDetail.questionPerSubject}
             />
           </div>
         </section>
@@ -101,10 +92,7 @@ function Exam(props) {
               name='examDate'
               type='date'
               id=''
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.examDate}
+              value={prevExamSettingsDetail.examDate}
             ></input>
           </div>
 
@@ -119,10 +107,7 @@ function Exam(props) {
               name='studentDelayTime'
               type='time'
               id=''
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.studentDelayTime}
+              value={prevExamSettingsDetail.studentDelayTime}
             ></input>
           </div>
         </section>
@@ -138,10 +123,7 @@ function Exam(props) {
               className={styles.ExamSelect1}
               name='randomiseQuestion'
               id=''
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.randomiseQuestion}
+              value={prevExamSettingsDetail.randomiseQuestion}
             >
               <option>what is your name? </option>
               <option>what is your age?</option>
@@ -160,10 +142,7 @@ function Exam(props) {
               className={styles.ExamSelect2}
               name='randomiseAnswers'
               id=''
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.randomiseAnswers}
+              value={prevExamSettingsDetail.randomiseAnswers}
             >
               <option>fine</option>
               <option>nice</option>
@@ -184,42 +163,26 @@ function Exam(props) {
               cols='30'
               rows='10'
               draggable='false'
-              onChange={(e) =>
-                examCon.handleInputChange(e.target.value, e.target.name)
-              }
-              value={examCon.examSettings.examInstructionEnd}
+              value={prevExamSettingsDetail.examInstructionEnd}
             ></textarea>
           </div>
         </section>
         <br></br>
         <footer className={styles.FooterWrapper}>
-          {examCon.validateExamSet ? (
-            <button
-              className={styles.SaveBtn}
-              onClick={(e) => {
-                e.preventDefault();
-                props.proceed();
-              }}
-              type='submit'
-            >
-              Save and Proceed
-            </button>
-          ) : (
-            <button
-              className={styles.SaveBtn}
-              onClick={(e) => {
-                e.preventDefault();
-                props.proceed();
-              }}
-              type='submit'
-            >
-              Pls fill all field
-            </button>
-          )}
+          <button
+            className={styles.SaveBtn}
+            onClick={(e) => {
+              e.preventDefault();
+              prevInfoHandler();
+            }}
+            type='submit'
+          >
+            Next
+          </button>
         </footer>
       </form>
     </div>
   );
 }
 
-export default Exam;
+export default ExamSettingsPrevious;

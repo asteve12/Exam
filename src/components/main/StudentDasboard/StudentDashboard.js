@@ -9,9 +9,7 @@ import RightSidebarmobile from '../../Sidebar/RightSidebar/mobile/RightSidebarmo
 import student from '../../../Data/studentCard/student';
 //styles
 import styles from './Studentdashboard.css';
-//icons
-import { IoIosArrowForward } from 'react-icons/io';
-import { IoIosArrowBack } from 'react-icons/io';
+
 //Components
 import MobileStudentRightbar from '../../Sidebar/RightSidebar/StudentRightSidebar/StudentRightSidebar';
 import ArrowButton from '../../ui/arrowButton/ArrowButton';

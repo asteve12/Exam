@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import RightSidebarmobile from '../../../Sidebar/RightSidebar/mobile/RightSidebarmobile';
-import styles from './ExamInfo.css';
+import styles from './ExamInfoPrevious.css';
 //components
 import Exammobile from '../../../Sidebar/RightSidebar/Exam/Mobile/Exammobile';
 import ExamInfoMobileRightbar from '../../../Sidebar/RightSidebar/Exam/Examinfo/Examinfo';
 //exampageconextData
 import context from '../../../../Pages/Exam/ExamContext';
-import { useContext } from 'react';
 
-function ExamInfo(props) {
-  const { handleExamInfoInput, handleSubmit, examInformation } =
-    useContext(context);
+function ExamInfoPrevious(props) {
+  const { prevExamInfoDetail } = useContext(context);
 
   return (
     <div className={styles.ExamWrapper}>
@@ -22,7 +20,7 @@ function ExamInfo(props) {
 
       <br></br>
       <header>
-        <h1 className={styles.PageTitle}>Exam Information</h1>
+        <h1 className={styles.PageTitle}>Previous Exam Information</h1>
       </header>
       <br></br>
       <form className={styles.ExamMain}>
@@ -31,14 +29,7 @@ function ExamInfo(props) {
             <label htmlFor=''>Select Subject:</label>
           </div>
           <div className={styles.ExamInput}>
-            <select
-              name='Subject'
-              id=''
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.Subject}
-            >
+            <select name='Subject' id='' value={prevExamInfoDetail.Subject}>
               <option></option>
               <option>Maths</option>
               <option>English</option>
@@ -63,10 +54,7 @@ function ExamInfo(props) {
               cols='30'
               rows='10'
               draggable='false'
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.Questions}
+              value={prevExamInfoDetail.Questions}
             ></textarea>
           </div>
         </section>
@@ -82,20 +70,14 @@ function ExamInfo(props) {
               id=''
               placeholder='A'
               className={styles.optionA}
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.firstAnswer}
+              value={prevExamInfoDetail.firstAnswer}
             ></input>
             <input
               name='secondAnswer'
               className={styles.optionB}
               placeholder='B'
               id=''
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.secondAnswer}
+              value={prevExamInfoDetail.secondAnswer}
             ></input>
           </div>
         </section>
@@ -112,20 +94,14 @@ function ExamInfo(props) {
               id=''
               placeholder='C'
               className={styles.optionA}
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.thirdAnswer}
+              value={prevExamInfoDetail.thirdAnswer}
             ></input>
             <input
               name='fourthAnswer'
               className={styles.optionB}
               placeholder='D'
               id=''
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.fourthAnswer}
+              value={prevExamInfoDetail.fourthAnswer}
             ></input>
           </div>
         </section>
@@ -140,10 +116,7 @@ function ExamInfo(props) {
               name='correctOption'
               id=''
               className={styles.optionA}
-              onChange={(e) =>
-                handleExamInfoInput(e.target.value, e.target.name)
-              }
-              value={examInformation.correctOption}
+              value={prevExamInfoDetail.correctOption}
             >
               <option>A</option>
               <option>B</option>
@@ -162,7 +135,6 @@ function ExamInfo(props) {
             type='submit'
             onClick={(e) => {
               props.proceed();
-              handleSubmit(e);
             }}
           >
             Save
@@ -173,4 +145,4 @@ function ExamInfo(props) {
   );
 }
 
-export default ExamInfo;
+export default ExamInfoPrevious;

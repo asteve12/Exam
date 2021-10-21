@@ -6,7 +6,7 @@ import Question from '../../../../../Data/Exam/availableQuest';
 //icons
 import { IoAdd } from 'react-icons/io5';
 
-function Examinfo() {
+function Examinfo(props) {
   return (
     <section className={styles.Registered}>
       <div className={styles.ExamWrapper}>
@@ -53,6 +53,10 @@ function Examinfo() {
         <br></br>
         <div className={styles.TemplateItem}>
           <p>Publish</p>
+        </div>
+        <br></br>
+        <div onClick={props.previousBtn} className={styles.TemplateItem}>
+          <p>Previous</p>
         </div>
         <br></br>
       </section>

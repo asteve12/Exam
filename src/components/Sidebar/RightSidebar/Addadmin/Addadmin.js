@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Addadmin.css';
 //icons
 import { IoAdd } from 'react-icons/io5';
-import { withRouter } from 'react-router-dom';
 
 function Addadmin() {
   return (

@@ -12,7 +12,7 @@ import Examinfo from './Exam/Examinfo/Examinfo';
 import StudentRightSidebar from './StudentRightSidebar/StudentRightSidebar';
 import Course from './course/Course';
 import AdministratorRightbar from './Administrator/Administrator';
-import Addadmin from './Addadmin/Addadmin';
+
 import Proctoring from './Proctoring/Proctoring';
 import NewsRightbar from './Newsrightsidebar/NewsRightbar';
 import ResultRightbar from './ResultRightbar/ResultRightbar';
@@ -51,7 +51,9 @@ function RightSidebar(props) {
 
       {props.name === 'Dashboard' ? <Registered></Registered> : null}
       {props.name === 'Exam' ? <Exam></Exam> : null}
-      {props.name === 'Examinfo' ? <Examinfo></Examinfo> : null}
+      {props.name === 'Examinfo' ? (
+        <Examinfo previousBtn={props.previous}></Examinfo>
+      ) : null}
       {props.name === 'Student' ? (
         <StudentRightSidebar></StudentRightSidebar>
       ) : null}

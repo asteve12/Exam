@@ -17,6 +17,9 @@ import Newsmain from './Newsmain/Newsmain';
 import ResultMain from './ResultMain/ResultMain';
 import SettingMain from './SettingMain/SettingMain';
 import Notification from './notification/Notification';
+import ExamSettingsPrevious from './Previous/ExamSettingsPrevious/ExamSettingsPrevious';
+import Previous from './Previous/Previous';
+import ExamPreviousInfo from './Previous/ExamInfoPrevious/ExamInfoPrevious';
 
 class Main extends React.Component {
   state = {
@@ -94,6 +97,15 @@ class Main extends React.Component {
           reset={this.examResetHandler}
         ></ExamInfo>
       );
+      if (this.props.previuosPage) {
+        displayExam = <Previous></Previous>;
+      }
+      if (this.props.previousSettings) {
+        displayExam = <ExamSettingsPrevious></ExamSettingsPrevious>;
+      }
+      if (this.props.PreviousInfo) {
+        displayExam = <ExamPreviousInfo></ExamPreviousInfo>;
+      }
     }
     return (
       <>
